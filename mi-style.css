@@ -1,0 +1,662 @@
+.mi-user {
+	position: absolute;
+}
+.mi-user::before {
+	content: '';
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	background-color: currentColor;
+	border-radius: 100%;
+	margin-left: 0.2em;
+	top: 1em;
+	border: 2px solid;
+}
+.mi-user::after {
+	content: '';
+	position: absolute;
+	height: 1em;
+	width: 1.4em;
+	background-color: currentColor;
+	border-radius: 100% 100% 0 0;
+	top: 2.5em;
+	border: 2px solid;
+}
+.mi-user.empty::before, .mi-user.empty::after {
+	background-color: transparent;
+}
+
+.mi-power {
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	border: 2px solid;
+	border-color: transparent transparent transparent currentColor;
+	border-radius: 100%;
+	transform: rotate(20deg);
+}
+.mi-power::before {
+	width: 2px;
+	content: '';
+	height: 1em;
+	left: 0.6em;
+	top: -0.3em;
+	background-color: currentColor;
+	position: absolute;
+	transform: rotate(-20deg);
+}
+.mi-power::after {
+	content: '';
+	left: -2px;
+	top: -2px;
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	border: 2px solid;
+	border-color: transparent currentColor currentColor currentColor;
+	border-radius: 100%;
+	transform: rotate(-40deg);
+}
+
+.mi-home {
+	position: absolute;
+	width: 0.8em;
+	height: 1em;
+	background-color: currentColor;
+	box-shadow: 1em 0 0 0 currentColor;
+}
+.mi-home::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: solid;
+	border-width: 0 1.1em 1.2em 1.1em;
+	border-color: transparent transparent currentColor transparent;
+	top: -1.1em;
+	left: -0.2em;
+}
+
+.mi-pen {
+	position: absolute;
+	width: 0.7em;
+	height: 2em;
+	background-color: currentColor;
+	transform: rotate(40deg);
+}
+.mi-pen::before {
+	content: '';
+	position: absolute;
+	background-color: currentColor;	
+	width: 0.7em;
+	height: 0.5em;
+	border-radius: 100% 100% 0 0;
+	top: -0.6em;
+	left: 0;
+}
+.mi-pen::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0;
+	top: 2.1em;
+	border: solid;
+	border-width: 0.35em 0.35em 0 0.35em;
+	border-color: currentColor transparent transparent transparent;
+}
+
+.mi-email {
+	position: absolute;
+	width: 3em;
+    height: 2em;
+    border-radius: 0.3em;
+	border: 2px solid currentColor;
+	background-color: currentColor;
+}
+.mi-email::before {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 1.5em;
+	background-color: #FFF;
+	transform-origin: right;
+	transform: rotate(-55deg);
+	left: 0.8em;
+}
+.mi-email::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 1.5em;
+	background-color: #FFF;
+	transform-origin: left;
+	transform: rotate(55deg);
+	right: 0.8em;
+}
+.mi-email.empty{
+	background-color: transparent;
+}
+.mi-email.empty::before, .mi-email.empty::after {
+	background-color: currentColor;
+}
+
+.mi-phone {
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	border: solid;
+	border-radius: 100%;
+	border-width: 0.2em;
+	border-color: transparent transparent transparent currentColor;
+	transform: rotate(-45deg);
+}
+.mi-phone::before {
+	content: '';
+	position: absolute;
+	background-color: currentColor;
+	height: 0.4em;
+    width: 0.8em;
+    border-radius: 0.2em 0.2em 0 0;
+    transform: rotate(126deg);
+    left: 0em;
+    top: -0.1em;
+}
+.mi-phone::after {
+	content: '';
+	position: absolute;
+	background-color: currentColor;
+	height: 0.4em;
+    width: 0.8em;
+    border-radius: 0.2em 0.2em 0 0;
+    transform: rotate(55deg);
+    transform-origin: bottom;
+    left: -0.3em;
+    top: 1.4em;
+}
+
+.mi-calendar {
+	position: absolute;
+	width: 3em;
+    height: 1.5em;
+    border-radius: 0.3em;
+    border: 0.2em solid currentColor;
+    border-top-width: 1em;
+    background-color: currentColor;
+}
+.mi-calendar::before {
+	content: '';
+	position: absolute;
+	width: 0.3em;
+	height: 0.5em;
+	top: -1.5em;
+	left: 0.2em;
+	background-color: currentColor;
+	box-shadow: 2.3em 0 0 0 currentColor;
+}
+.mi-calendar::after {
+	content: '';
+	position: absolute;
+	height: 0.2em;
+	width: 0.4em;
+	background-color: #FFF;
+	left: 0.1em;
+	top: 0.2em;
+	box-shadow:
+		0.6em 0 0 0 #FFF,
+		1.2em 0 0 0 #FFF,
+		1.8em 0 0 0 #FFF,
+		2.4em 0 0 0 #FFF,
+		0em 0.4em 0 0 #FFF,
+		0.6em 0.4em 0 0 #FFF,
+		1.2em 0.4em 0 0 #FFF,
+		1.8em 0.4em 0 0 #FFF,
+		2.4em 0.4em 0 0 #FFF,
+		0em 0.8em 0 0 #FFF,
+		0.6em 0.8em 0 0 #FFF,
+		1.2em 0.8em 0 0 #FFF,
+		1.8em 0.8em 0 0 #FFF,
+		2.4em 0.8em 0 0 #FFF;
+}
+.mi-calendar.empty {
+	background-color: transparent;
+}
+.mi-calendar.empty::after {
+	background-color: currentColor;
+	box-shadow:
+		0.6em 0 0 0,
+		1.2em 0 0 0,
+		1.8em 0 0 0,
+		2.4em 0 0 0,
+		0em 0.4em 0 0,
+		0.6em 0.4em 0 0,
+		1.2em 0.4em 0 0,
+		1.8em 0.4em 0 0,
+		2.4em 0.4em 0 0,
+		0em 0.8em 0 0,
+		0.6em 0.8em 0 0,
+		1.2em 0.8em 0 0,
+		1.8em 0.8em 0 0,
+		2.4em 0.8em 0 0;
+}
+
+.mi-hour {
+	position: absolute;
+	height: 2em;
+	width: 2em;
+	border: 0.2em solid currentColor;
+	border-radius: 100%;
+	background-color: currentColor;
+}
+.mi-hour::before {
+	content: '';
+	position: absolute;
+	width: 0.2em;
+	height: 0.9em;
+	left: 0.9em;
+	top: 0.2em;
+	background-color: #FFF;
+}
+.mi-hour::after {
+	content: '';
+	position: absolute;
+	width: 0.5em;
+	height: 0.2em;
+	left: 1em;
+	top: 0.9em;
+	background-color: #FFF;
+}
+.mi-hour.empty {
+	background-color: transparent;
+}
+.mi-hour.empty::before, .mi-hour.empty::after {
+	background-color: currentColor;
+}
+
+.mi-adjust {
+	position: absolute;
+	height: 2em;
+	width: 2em;
+	border: 0.2em solid currentColor;
+	border-radius: 100%;
+}
+.mi-adjust::before {
+	content: '';
+	position: absolute;
+	height: 0;
+	width: 0;
+	border: 1.1em solid;
+	border-color: transparent transparent currentColor currentColor;
+	transform: rotate(45deg);
+	top: -0.1em;
+	left: -0.1em;
+	border-radius: 100%;
+}
+
+.mi-menu {
+	position: absolute;
+	height: 0.3em;
+	width: 2em;
+	border-radius: 0.1em;
+	background-color: currentColor;
+	box-shadow: 
+		0 0.6em 0 0,
+		0 1.2em 0 0;
+}
+
+.mi-close {
+	position: absolute;
+	height: 0.3em;
+	width: 2em;
+	border-radius: 0.1em;
+	background-color: currentColor;
+	transform: rotate(45deg);
+}
+.mi-close::before {
+	content: '';
+	position: absolute;
+	height: 0.3em;
+	width: 2em;
+	border-radius: 0.1em;
+	background-color: currentColor;
+	transform: rotate(90deg);
+	left: 0;
+	top: 0;
+}
+
+.mi-plus {
+	position: absolute;
+	height: 0.3em;
+	width: 2em;
+	border-radius: 0.1em;
+	background-color: currentColor;
+}
+.mi-plus::before {
+	content: '';
+	position: absolute;
+	height: 0.3em;
+	width: 2em;
+	border-radius: 0.1em;
+	background-color: currentColor;
+	transform: rotate(90deg);
+	left: 0;
+	top: 0;
+}
+
+.mi-left {
+	position: absolute;
+	height: 0.3em;
+	width: 1.5em;
+	border-radius: 0 0.1em 0.1em 0;
+	background-color: currentColor;
+	transform: rotate(-45deg);
+}
+.mi-left::before {
+	content: '';
+	position: absolute;
+	height: 0.3em;
+	width: 1.5em;
+	border-radius: 0 0.1em 0.1em 0;
+	background-color: currentColor;
+	transform: rotate(90deg);
+	left: -0.6em;
+	top: 0.6em;
+}
+
+.mi-up {
+	position: absolute;
+	height: 0.3em;
+	width: 1.5em;
+	border-radius: 0 0.1em 0.1em 0;
+	background-color: currentColor;
+	transform: rotate(45deg);
+}
+.mi-up::before {
+	content: '';
+	position: absolute;
+	height: 0.3em;
+	width: 1.5em;
+	border-radius: 0 0.1em 0.1em 0;
+	background-color: currentColor;
+	transform: rotate(90deg);
+	left: -0.6em;
+	top: 0.6em;
+}
+
+.mi-right {
+	position: absolute;
+	height: 0.3em;
+	width: 1.5em;
+	border-radius: 0 0.1em 0.1em 0;
+	background-color: currentColor;
+	transform: rotate(135deg);
+}
+.mi-right::before {
+	content: '';
+	position: absolute;
+	height: 0.3em;
+	width: 1.5em;
+	border-radius: 0 0.1em 0.1em 0;
+	background-color: currentColor;
+	transform: rotate(90deg);
+	left: -0.6em;
+	top: 0.6em;
+}
+
+.mi-down {
+	position: absolute;
+	height: 0.3em;
+	width: 1.5em;
+	border-radius: 0 0.1em 0.1em 0;
+	background-color: currentColor;
+	transform: rotate(-135deg);
+}
+.mi-down::before {
+	content: '';
+	position: absolute;
+	height: 0.3em;
+	width: 1.5em;
+	border-radius: 0 0.1em 0.1em 0;
+	background-color: currentColor;
+	transform: rotate(90deg);
+	left: -0.6em;
+	top: 0.6em;
+}
+
+.mi-battery {
+	position: absolute;
+	border: 0.2em solid;
+	border-color: currentColor transparent currentColor currentColor;
+	height: 1em;
+	width: 2.5em;
+	border-radius: 0.2em;
+}
+.mi-battery::before {
+	content: '';
+	position: absolute;
+	height: 0.6em;
+	width: 0.1em;
+	border: 0.2em solid;
+	border-color: currentColor currentColor currentColor transparent;
+	right: -0.5em;
+	border-radius: 0.2em;
+}
+.mi-battery::after {
+	content: '';
+	position: absolute;
+	background-color: currentColor;
+	height: 0.8em;
+	top: 0.1em;
+	left: 0.1em;
+}
+.mi-battery.low::after {
+	width: 0.5em;
+}
+.mi-battery.mid::after {
+	width: 1.2em;
+}
+.mi-battery.full::after {
+	width: 2.3em;
+}
+
+.mi-bookmark {
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	background-color: currentColor;
+	border-radius: 0.3em 0.3em 0 0;
+}
+.mi-bookmark::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 0.8em solid;
+	border-left-width: 1em;
+	border-color: transparent transparent transparent currentColor;
+	top: 1.2em;
+	left: 0;
+}
+.mi-bookmark::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 0.8em solid;
+	border-right-width: 1em;
+	border-color: transparent currentColor transparent transparent;
+	top: 1.2em;
+	right: 0;
+}
+
+.mi-calculator {
+	position: absolute;
+	border: 2px solid currentColor;
+	border-radius: 0.2em;
+	width: 2em;
+	height: 3em;
+	background-color: currentColor;
+}
+.mi-calculator::before {
+	content: '';
+	position: absolute;
+	background-color: #FFF;
+	width: 1.6em;
+	height: 0.8em;
+	left: 0.2em;
+	top: 0.1em;
+}
+.mi-calculator::after {
+	content: '';
+	position: absolute;
+	background-color: #FFF;
+	width: 0.4em;
+	height: 0.4em;
+	left: 0.2em;
+	top: 1.2em;
+	box-shadow: 
+		0.6em 0 0 0 #FFF,
+		1.2em 0 0 0 #FFF,
+		0 0.6em 0 0 #FFF,
+		0.6em 0.6em 0 0 #FFF,
+		1.2em 0.6em 0 0 #FFF,
+		1.2em 0.8em 0 0 #FFF,
+		0 1.2em 0 0 #FFF,
+		0.6em 1.2em 0 0 #FFF,
+		1.2em 1.2em 0 0 #FFF;
+}
+.mi-calculator.empty {
+	background-color: transparent;
+}
+.mi-calculator.empty::before {
+	background-color: currentColor;
+}
+.mi-calculator.empty::after {
+	background-color: currentColor;
+	box-shadow: 
+		0.6em 0 0 0,
+		1.2em 0 0 0,
+		0 0.6em 0 0,
+		0.6em 0.6em 0 0,
+		1.2em 0.6em 0 0,
+		1.2em 0.8em 0 0,
+		0 1.2em 0 0,
+		0.6em 1.2em 0 0,
+		1.2em 1.2em 0 0;
+}
+
+.mi-stats {
+	position: absolute;
+	width: 2.5em;
+	height: 2em;
+	border: 0.3em solid;
+	border-color: transparent transparent currentColor currentColor;
+}
+.mi-stats::before {
+	content: '';
+	position: absolute;
+	background-color: currentColor;
+	height: 1em;
+	width: 0.4em;
+	left: 0.1em;
+	bottom: 0.1em;
+	box-shadow:
+		0.5em 0 0 0,
+		0.5em -0.7em 0 0,
+		1em 0 0 0,
+		1em -0.4em 0 0,
+		1.5em 0 0 0,
+		1.5em -1em 0 0,
+		2em 0 0 0,
+		2em -0.3em 0 0;
+}
+
+.mi-check {
+	position: absolute;
+	height: 0.3em;
+	width: 1.5em;
+	border-radius: 0 0.1em 0.1em 0;
+	background-color: currentColor;
+	transform: rotate(45deg);
+}
+.mi-check::before {
+	content: '';
+	position: absolute;
+	height: 0.3em;
+	width: 2em;
+	background-color: currentColor;
+	transform: rotate(90deg);
+	left: 0.4em;
+	top: -0.9em;
+}
+
+.mi-clipboard {
+	position: absolute;
+	border: 2px solid currentColor;
+	border-radius: 0.4em;
+	width: 2em;
+	height: 3em;
+	background-color: currentColor;
+}
+.mi-clipboard::before {
+	content: '';
+	position: absolute;
+	background-color: #FFF;
+	width: 0.4em;
+	height: 0.4em;
+	border-radius: 100%;
+	border: 0.2em solid currentColor;
+	top: -0.7em;
+	left: 0.6em;
+}
+.mi-clipboard::after {
+	content: '';
+	position: absolute;
+	background-color: #FFF;
+	width: 1.6em;
+	height: 0.2em;
+	top: 0.2em;
+	left: 0.2em
+}
+.mi-clipboard.empty {
+	background-color: transparent;
+}
+.mi-clipboard.empty::after {
+	background-color: currentColor;
+}
+
+.mi-comment {
+	position: absolute;
+	background-color: currentColor;
+	border: 0.2em solid currentColor;
+	width: 3em;
+	height: 2em;
+	border-radius: 100%;
+}
+.mi-comment::before {
+	content: '';
+	position: absolute;
+	border-radius: 100%;
+	width: 1em;
+	height: 1em;
+	border: solid;
+	border-width: 1em 1em 1em 0;
+	border-color: transparent transparent currentColor transparent;
+	left: -2.2em;
+	top: -1.4em;
+	transform: rotate(-80deg);
+	transform-origin: right;
+}
+.mi-comment::after {
+	content: '';
+	position: absolute;
+	background-color: #FFF;
+	border-radius: 100%;
+	width: 0.4em;
+	height: 0.4em;
+	left: 0.6em;
+	top: 0.8em;
+	box-shadow:
+		0.7em 0 0 0 #FFF,
+		1.4em 0 0 0 #FFF;
+}

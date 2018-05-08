@@ -1,0 +1,81 @@
+h1, p {
+	font-family: sans-serif;
+	text-align: center;
+}
+.icons-item {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	margin: 2px;
+	font-size: 10px;
+	position: relative;
+	text-align: center;
+	font-family: sans-serif;
+}
+.icons-item p {
+	margin: 0;
+}
+.icons-item i {
+	left: 40px;
+	top: 25px;
+}
+.icons-item .mi-power {
+    top: 40px;
+}
+.icons-item .mi-home {
+	top: 50px;
+}
+.icons-item .mi-pen {
+	left: 45px;
+	top: 45px;
+}
+.icons-item .mi-email {
+	left: 35px;
+    top: 40px;
+}
+.icons-item .mi-phone {
+	font-size: 15px;
+}
+.icons-item .mi-calendar {
+	left: 35px;
+	top: 40px;
+	font-size: px;
+}
+.icons-item .mi-hour, .icons-item .mi-adjust {
+	top: 40px;
+}
+.icons-item .mi-menu {
+	top: 40px;
+}
+.icons-item .mi-close, .icons-item .mi-plus {
+	top: 50px;
+}
+.icons-item .mi-left, .icons-item .mi-up, .icons-item .mi-right, .icons-item .mi-down {
+	top: 45px;
+}
+.icons-item .mi-up {
+	left: 50px;
+}
+.icons-item .mi-battery {
+	top: 40px;
+	left: 35px;
+}
+.icons-item .mi-bookmark {
+	top: 35px;
+}
+.icons-item .mi-calculator, .icons-item .mi-clipboard {
+	top: 35px;
+}
+.icons-item .mi-stats {
+	top: 40px;
+	left: 35px;
+}
+.icons-item .mi-check {
+	top: 50px;
+	left: 35px;
+}
+.icons-item .mi-comment {
+	top: 35px;
+	left: 35px;
+}
