@@ -5,7 +5,7 @@ Hi ! This is a bunch of icons entirely made of CSS, you can change their size si
 
 # How to
 
-Well, you just need to import the **"mi-style.css"** file into your project aaaand it's done ! You just need to add the right class to an i tag.
+Well, you just need to import the **"mi-style.css"** file into your project aaaand it's done ! You just need to add the right class to an i tag. See all icons here: [a link](http://loscil.fr/CSSIcons/)
 
 `<i class="mi-[icon name]"></i>`
 
