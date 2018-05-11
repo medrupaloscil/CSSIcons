@@ -118,3 +118,30 @@ h1, p {
 .icons-item .mi-glass {
 	top: 35px;
 }
+.icons-item .mi-pie {
+	top: 35px;
+	left: 35px;
+}
+.icons-item .mi-trash {
+	top: 35px;
+}
+.icons-item .mi-eye {
+	top: 40px;
+	left: 45px;
+	font-size: 8px;
+}
+.icons-item .mi-hierarchy {
+	top: 35px;
+	left: 45px;
+}
+.icons-item .mi-bell {
+	top: 40px;
+}
+.icons-item .mi-connection {
+	top: 50px;
+	font-size: 12px;
+	left: 45px;
+}
+.icons-item .mi-save {
+	top: 45px;
+}

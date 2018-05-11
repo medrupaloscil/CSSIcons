@@ -1019,3 +1019,202 @@
 .mi-glass.empty, .mi-glass.empty::after {
 	background-color: transparent;
 }
+
+.mi-pie {
+	position: absolute;
+	transition: all 0.2s;
+	width: 0;
+	height: 0;
+	border: solid;
+	border-radius: 100%;
+	border-color: transparent currentColor currentColor;
+    border-width: 1.5em;
+    transform: rotate(45deg);
+}
+.mi-pie::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: solid;
+	border-radius: 100%;
+	border-color: currentColor transparent transparent transparent;
+    border-width: 1.4em;
+    left: -1.4em;
+    top: -1.5em;
+}
+
+.mi-trash {
+	position: absolute;
+	transition: all 0.2s;
+	height: 2em;
+	width: 1.6em;
+	border: 0.2em solid currentColor;
+	border-radius: 0.1em;
+}
+.mi-trash::before {
+	content: '';
+	position: absolute;
+	background-color: currentColor;
+	width: 0.2em;
+	height: 1em;
+	top: 0.6em;
+	left: 0.3em;
+	box-shadow:
+		0.4em 0 0 0,
+		0.8em 0 0 0;
+}
+.mi-trash::after {
+	content: '';
+	position: absolute;
+	height: 0.1em;
+	width: 0.8em;
+	border: 0.2em solid;
+	border-color: currentColor currentColor transparent currentColor;
+	border-radius: 0.2em;
+	left: 0.2em;
+	top: -0.5em;
+}
+
+.mi-eye {
+	position: absolute;
+	transition: all 0.2s;
+	width: 0.4em;
+	height: 0.4em;
+	border: 0.7em solid currentColor;
+	border-radius: 100%;
+}
+.mi-eye::before {
+	content: '';
+	position: absolute;
+	width: 7em;
+	height: 7em;
+	border: 0.2em solid;
+	border-color: currentColor transparent transparent transparent;
+	border-radius: 100%;
+	top: -0.9em;
+	left: -3.5em;
+}
+.mi-eye::after {
+	content: '';
+	position: absolute;
+	width: 7em;
+	height: 7em;
+	border: 0.2em solid;
+	border-color: transparent transparent currentColor transparent;
+	border-radius: 100%;
+	bottom: -0.9em;
+	left: -3.5em;
+}
+
+.mi-hierarchy {
+	position: absolute;
+	transition: all 0.2s;
+	height: 0.4em;
+	width: 0.8em;
+	border: 0.2em solid currentColor;
+	border-radius: 0.2em;
+	box-shadow: 
+		-1.1em 1.5em 0 0,
+		1.1em 1.5em 0 0;
+}
+.mi-hierarchy::before {
+	content: '';
+	position: absolute;
+	width: 0.2em;
+	height: 0.5em;
+	background-color: currentColor;
+	left: 0.3em;
+	top: 0.5em;
+}
+.mi-hierarchy::after {
+	content: '';
+	position: absolute;
+	width: 2em;
+	height: 0.3em;
+	border: 0.2em solid;
+	border-radius: 0.2em;
+	border-color: currentColor currentColor transparent;
+	left: -0.8em;
+	top: 0.9em;
+}
+
+.mi-bell {
+	position: absolute;
+	transition: all 0.2s;
+	width: 1em;
+	height: 1.4em;
+	border: 0.2em solid currentColor;
+	border-radius: 100% 100% 0 0;
+}
+.mi-bell::before {
+	content: '';
+	position: absolute;
+	background-color: currentColor;
+	width: 1.8em;
+	height: 0.2em;
+	bottom:-0.2em;
+	left: -0.4em;
+}
+.mi-bell::after {
+	content: '';
+	position: absolute;
+	height: 0.4em;
+	width: 0.4em;
+	background-color: currentColor;
+	border-radius: 100%;
+	bottom: -0.7em;
+	left: 0.3em;
+	box-shadow: 0 -2.1em 0 0;
+}
+
+.mi-connection {
+	position: absolute;
+	transition: all 0.2s;
+	height: 0.4em;
+	width: 0.4em;
+	background-color: currentColor;
+	border-radius: 100%;
+}
+.mi-connection::before {
+	content: '';
+	position: absolute;
+	height: 1em;
+	width: 1em;
+	border: 0.2em solid;
+	border-color: currentColor transparent transparent;
+	border-radius: 100%;
+	left: -0.5em;
+	top: -0.4em;
+}
+.mi-connection::after {
+	content: '';
+	position: absolute;
+	height: 2em;
+	width: 2em;
+	border: 0.2em solid;
+	border-color: currentColor transparent transparent;
+	border-radius: 100%;
+	left: -1em;
+	top: -0.8em;
+}
+
+.mi-save {
+	position: absolute;
+	transition: all 0.2s;
+	height: 0.5em;
+	width: 1.3em;
+	border: solid currentColor;
+	border-width: 1em 0.4em 0.2em;
+}
+.mi-save::before {
+	content: '';
+	position: absolute;
+	width: 1.7em;
+	height: 0;
+	border: solid;
+	border-color: transparent transparent currentColor transparent;
+	border-width: 0 0.4em 0.4em 0;
+	top: -1.4em;
+	left:  -0.4em;
+}
