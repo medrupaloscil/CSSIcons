@@ -1,4 +1,4 @@
-h1, p {
+h1, h2, p {
 	font-family: sans-serif;
 	text-align: center;
 }
@@ -144,4 +144,22 @@ h1, p {
 }
 .icons-item .mi-save {
 	top: 45px;
+}
+.icons-item .mi-coffee {
+	top: 40px;
+}
+.icons-item .mi-photo {
+	top: 40px;
+	left: 35px;
+}
+.icons-item .mi-folder {
+	top: 40px;
+}
+.icons-item .mi-film {
+	top: 40px;
+	left: 45px;
+}
+.icons-item .mi-star {
+	top: 40px;
+	left: 30px;
 }
