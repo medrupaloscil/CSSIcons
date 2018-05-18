@@ -3,8 +3,7 @@ h1, h2, p {
 	text-align: center;
 }
 .icons-item {
-	width: 100px;
-	height: 100px;
+	padding: 50px;
 	border: 1px solid #ccc;
 	display: inline-block;
 	margin: 2px;
@@ -15,151 +14,12 @@ h1, h2, p {
 }
 .icons-item p {
 	margin: 0;
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 100%;
 }
 .icons-item i {
-	left: 40px;
-	top: 25px;
-}
-.icons-item .mi-power {
-    top: 40px;
-}
-.icons-item .mi-home {
-	top: 50px;
-}
-.icons-item .mi-pen {
-	left: 45px;
-	top: 45px;
-}
-.icons-item .mi-email {
-	left: 35px;
-    top: 40px;
-}
-.icons-item .mi-phone {
-	font-size: 15px;
-}
-.icons-item .mi-calendar {
-	left: 35px;
 	top: 40px;
-	font-size: px;
-}
-.icons-item .mi-hour, .icons-item .mi-adjust {
-	top: 40px;
-}
-.icons-item .mi-menu {
-	top: 40px;
-}
-.icons-item .mi-close, .icons-item .mi-plus {
-	top: 50px;
-}
-.icons-item .mi-left, .icons-item .mi-up, .icons-item .mi-right, .icons-item .mi-down {
-	top: 45px;
-}
-.icons-item .mi-up {
-	left: 50px;
-}
-.icons-item .mi-battery {
-	top: 40px;
-	left: 35px;
-}
-.icons-item .mi-bookmark {
-	top: 35px;
-}
-.icons-item .mi-calculator, .icons-item .mi-clipboard {
-	top: 35px;
-}
-.icons-item .mi-stats {
-	top: 40px;
-	left: 35px;
-}
-.icons-item .mi-check {
-	top: 50px;
-	left: 35px;
-}
-.icons-item .mi-comment {
-	top: 35px;
-	left: 35px;
-}
-.icons-item .mi-location {
-	top: 35px;
-}
-.icons-item .mi-link {
-	top: 40px;
-	left: 35px;
-}
-.icons-item .mi-search {
-	top: 35px;
-	left: 35px;
-}
-.icons-item .mi-music {
-	top: 40px;
-	left: 50px;
-}
-.icons-item .mi-cloud {
-	top: 50px;
-	left: 35px;
-	font-size: 12px;
-}
-.icons-item .mi-cart {
-	top: 40px;
-	font-size: 12px;
-}
-.icons-item .mi-sign {
-	top: 40px;
-}
-.icons-item .mi-download {
-	top: 50px;
-}
-.icons-item .mi-upload {
-	top: 35px;
-}
-.icons-item .mi-settings {
-	top: 45px;
-}
-.icons-item .mi-glass {
-	top: 35px;
-}
-.icons-item .mi-pie {
-	top: 35px;
-	left: 35px;
-}
-.icons-item .mi-trash {
-	top: 35px;
-}
-.icons-item .mi-eye {
-	top: 40px;
-	left: 45px;
-	font-size: 8px;
-}
-.icons-item .mi-hierarchy {
-	top: 35px;
-	left: 45px;
-}
-.icons-item .mi-bell {
-	top: 40px;
-}
-.icons-item .mi-connection {
-	top: 50px;
-	font-size: 12px;
-	left: 45px;
-}
-.icons-item .mi-save {
-	top: 45px;
-}
-.icons-item .mi-coffee {
-	top: 40px;
-}
-.icons-item .mi-photo {
-	top: 40px;
-	left: 35px;
-}
-.icons-item .mi-folder {
-	top: 40px;
-}
-.icons-item .mi-film {
-	top: 40px;
-	left: 45px;
-}
-.icons-item .mi-star {
-	top: 40px;
-	left: 30px;
+    left: 40px;
 }

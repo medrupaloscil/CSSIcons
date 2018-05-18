@@ -10,7 +10,6 @@
 	background-color: currentColor;
 	border-radius: 100%;
 	margin-left: 0.2em;
-	top: 1em;
 	border: 2px solid;
 }
 .mi-user::after {
@@ -20,7 +19,7 @@
 	width: 1.4em;
 	background-color: currentColor;
 	border-radius: 100% 100% 0 0;
-	top: 2.5em;
+	top: 1.5em;
 	border: 2px solid;
 }
 .mi-user.empty::before, .mi-user.empty::after {
@@ -63,10 +62,11 @@
 .mi-home {
 	position: absolute;
 	transition: all 0.2s;
-	width: 0.8em;
-	height: 1em;
+	width: 1em;
+	height: 1.4em;
 	background-color: currentColor;
-	box-shadow: 1em 0 0 0 currentColor;
+	box-shadow: 1.4em 0 0 0 currentColor;
+	margin-top: 1.3em;
 }
 .mi-home::before {
 	content: '';
@@ -74,10 +74,10 @@
 	width: 0;
 	height: 0;
 	border: solid;
-	border-width: 0 1.1em 1.2em 1.1em;
+	border-width: 0 1.6em 1.6em 1.6em;
 	border-color: transparent transparent currentColor transparent;
-	top: -1.1em;
-	left: -0.2em;
+	top: -1.4em;
+	left: -0.4em;
 }
 
 .mi-pen {
@@ -87,6 +87,8 @@
 	height: 2em;
 	background-color: currentColor;
 	transform: rotate(40deg);
+	margin-left: 0.5em;
+	margin-top: 0.5em;
 }
 .mi-pen::before {
 	content: '';
@@ -118,6 +120,7 @@
     border-radius: 0.3em;
 	border: 2px solid currentColor;
 	background-color: currentColor;
+	margin-left: -0.5em;
 }
 .mi-email::before {
 	content: '';
@@ -190,6 +193,7 @@
     border: 0.2em solid currentColor;
     border-top-width: 1em;
     background-color: currentColor;
+	margin-left: -0.5em;
 }
 .mi-calendar::before {
 	content: '';
@@ -250,28 +254,30 @@
 .mi-hour {
 	position: absolute;
 	transition: all 0.2s;
-	height: 2em;
-	width: 2em;
+	height: 2.5em;
+	width: 2.5em;
 	border: 0.2em solid currentColor;
 	border-radius: 100%;
 	background-color: currentColor;
+	margin-left: -0.5em;
+	margin-top: -0.5em;
 }
 .mi-hour::before {
 	content: '';
 	position: absolute;
 	width: 0.2em;
-	height: 0.9em;
-	left: 0.9em;
-	top: 0.2em;
+	height: 1.2em;
+	left: 1.1em;
+	top: 0.3em;
 	background-color: #FFF;
 }
 .mi-hour::after {
 	content: '';
 	position: absolute;
-	width: 0.5em;
+	width: 0.7em;
 	height: 0.2em;
-	left: 1em;
-	top: 0.9em;
+	left: 1.2em;
+	top: 1.3em;
 	background-color: #FFF;
 }
 .mi-hour.empty {
@@ -284,17 +290,19 @@
 .mi-adjust {
 	position: absolute;
 	transition: all 0.2s;
-	height: 2em;
-	width: 2em;
+	height: 2.5em;
+	width: 2.5em;
 	border: 0.2em solid currentColor;
 	border-radius: 100%;
+	margin-left: -0.5em;
+	margin-top: -0.5em;
 }
 .mi-adjust::before {
 	content: '';
 	position: absolute;
 	height: 0;
 	width: 0;
-	border: 1.1em solid;
+	border: 1.4em solid;
 	border-color: transparent transparent currentColor currentColor;
 	transform: rotate(45deg);
 	top: -0.1em;
@@ -306,28 +314,39 @@
 	position: absolute;
 	transition: all 0.2s;
 	height: 0.3em;
-	width: 2em;
+	width: 2.5em;
 	border-radius: 0.1em;
 	background-color: currentColor;
-	box-shadow: 
-		0 0.6em 0 0,
-		0 1.2em 0 0;
+	box-shadow: 0 0.7em 0 0;
+	margin-left: -0.3em;
+}
+.mi-menu::before {
+	content: '';
+	position: absolute;
+	height: 0.3em;
+	width: 2.5em;
+	border-radius: 0.1em;
+	background-color: currentColor;
+	top: 1.4em;
+	left: 0;
 }
 
 .mi-close {
 	position: absolute;
 	transition: all 0.2s;
 	height: 0.3em;
-	width: 2em;
+	width: 2.5em;
 	border-radius: 0.1em;
 	background-color: currentColor;
 	transform: rotate(45deg);
+	margin-left: -0.3em;
+	margin-top: 0.5em;
 }
 .mi-close::before {
 	content: '';
 	position: absolute;
 	height: 0.3em;
-	width: 2em;
+	width: 2.5em;
 	border-radius: 0.1em;
 	background-color: currentColor;
 	transform: rotate(90deg);
@@ -342,6 +361,7 @@
 	width: 2em;
 	border-radius: 0.1em;
 	background-color: currentColor;
+	margin-top: 0.5em;
 }
 .mi-plus::before {
 	content: '';
@@ -363,6 +383,7 @@
 	border-radius: 0 0.1em 0.1em 0;
 	background-color: currentColor;
 	transform: rotate(-45deg);
+	margin-top: 0.5em;
 }
 .mi-left::before {
 	content: '';
@@ -384,6 +405,8 @@
 	border-radius: 0 0.1em 0.1em 0;
 	background-color: currentColor;
 	transform: rotate(45deg);
+	margin-top: 0.7em;
+	margin-left: 0.7em;
 }
 .mi-up::before {
 	content: '';
@@ -405,6 +428,8 @@
 	border-radius: 0 0.1em 0.1em 0;
 	background-color: currentColor;
 	transform: rotate(135deg);
+	margin-top: 0.8em;
+	margin-left: 0.5em;
 }
 .mi-right::before {
 	content: '';
@@ -426,6 +451,7 @@
 	border-radius: 0 0.1em 0.1em 0;
 	background-color: currentColor;
 	transform: rotate(-135deg);
+	margin-top: 0.5em;
 }
 .mi-down::before {
 	content: '';
@@ -447,6 +473,7 @@
 	height: 1em;
 	width: 2.5em;
 	border-radius: 0.2em;
+	margin-left: -0.3em;
 }
 .mi-battery::before {
 	content: '';
@@ -571,6 +598,7 @@
 	height: 2em;
 	border: 0.3em solid;
 	border-color: transparent transparent currentColor currentColor;
+	margin-left: -0.5em;
 }
 .mi-stats::before {
 	content: '';
@@ -599,6 +627,8 @@
 	border-radius: 0 0.1em 0.1em 0;
 	background-color: currentColor;
 	transform: rotate(45deg);
+	margin-top: 1.3em;
+	margin-left: -0.5em;
 }
 .mi-check::before {
 	content: '';
@@ -655,6 +685,7 @@
 	width: 3em;
 	height: 2em;
 	border-radius: 100%;
+	margin-left: -0.5em;
 }
 .mi-comment::before {
 	content: '';
@@ -691,6 +722,7 @@
 	width: 2em;
 	height: 2em;
 	border-radius: 100%;
+	margin-top: -0.5em;
 }
 .mi-location::before {
 	content: '';
@@ -724,6 +756,7 @@
 	box-shadow: 
 		1.1em 1.5em 0 0,
 		2.1em 0 0 0;
+		margin-left: -0.5em;
 }
 .mi-link::before {
 	content: '';
@@ -754,6 +787,8 @@
 	height: 2em;
 	border: 0.2em solid currentColor;
 	border-radius: 100%;
+	margin-top: -0.8em;
+	margin-left: -0.5em;
 }
 .mi-search::before {
 	content: '';
@@ -795,28 +830,31 @@
 	position: absolute;
 	transition: all 0.2s;
 	width: 0.2em;
-	height: 1.8em;
+	height: 2em;
 	background-color: currentColor;
+	margin-left: 0.8em;
 }
 .mi-music::before {
 	content: '';
 	position: absolute;
-	width: 0.9em;
-	height: 0.6em;
+	width: 1.2em;
+	height: 0.8em;
 	border-radius: 100%;
 	background-color: currentColor;
-	left: -0.7em;
+	left: -1em;
 	bottom: -0.2em;
 }
 .mi-music::after {
 	content: '';
 	position: absolute;
-	width: 0.7em;
-	height: 0.5em;
+	width: 0.9em;
+	height: 0.8em;
 	border: solid;
-	border-width: 0.4em 0 0 0.4em;
+	border-width: 0.6em 0 0 0.6em;
 	border-color: currentColor transparent transparent transparent;
 	border-top-right-radius: 100%;
+	top: -0.3em;
+	left: 0em;
 }
 
 .mi-cloud {
@@ -831,6 +869,8 @@
 		1.4em -0.8em 0 0,
 		1.7em -0.4em 0 0,
 		2em 0 0 0;
+	margin-left: -0.5em;
+	margin-top: 1em;
 }
 .mi-cloud::before {
 	content: '';
@@ -851,6 +891,8 @@
 	border-color: currentColor transparent currentColor currentColor;
 	border-width: 1em 0 0.2em 0.2em;
 	transform: skewX(10deg);
+	margin-top: 0.2em;
+	margin-left: 0.5em;
 }
 .mi-cart::before {
 	content: '';
@@ -909,6 +951,7 @@
 	border: 0.2em solid;
 	border-top-width: 0;
 	border-color: transparent currentColor currentColor currentColor;
+	margin-top: 1em;
 }
 .mi-download::before {
 	content: '';
@@ -965,45 +1008,46 @@
 	transition: all 0.2s;
 	height: 0.5em;
 	width: 0.5em;
-	border: 0.6em solid currentColor;
+	border: 1em solid currentColor;
 	border-radius: 100%;
 }
 .mi-settings::before {
 	content: '';
 	position: absolute;
-	height: 0.3em;
-	width: 0.3em;
+	height: 0.5em;
+	width: 0.5em;
 	background-color: currentColor;
 	border-radius: 50%;
-	top: -0.8em;
-	left: 0.1em;
+	top: -1.3em;
+	left: 0em;
 	box-shadow:
-		0.6em 0.2em 0 0,
-		0.9em 0.9em 0 0,
-		0.6em 1.6em 0 0,
-		0 1.8em 0 0,
-		-0.6em 1.6em 0 0,
-		-0.9em 0.9em 0 0,
-		-0.6em 0.2em 0 0;
+		1em 0.4em 0 0,
+		1.3em 1.3em 0 0,
+		1em 2.2em 0 0,
+		0 2.6em 0 0,
+		-1em 2.2em 0 0,
+		-1.3em 1.3em 0 0,
+		-1em 0.4em 0 0;
 }
 
 .mi-glass {
 	position: absolute;
 	transition: all 0.2s;
 	background-color: currentColor;
-	width: 1.5em;
-	height: 2em;
+	width: 1.3em;
+	height: 1.5em;
 	border-radius: 0 0 50% 50%;
 	border: 0.2em solid currentColor;
+	margin-left: 0.3em;
 }
 .mi-glass::before {
 	content: '';
 	position: absolute;
 	width: 0.3em;
-	height: 1em;
+	height: 0.8em;
 	background-color: currentColor;
-	bottom: -1.1em;
-	left: 0.6em;
+	bottom: -0.9em;
+	left: 0.5em;
 }
 .mi-glass::after {
 	content: '';
@@ -1012,9 +1056,9 @@
 	width: 0.7em;
 	background-color: currentColor;
 	border: 0.2em solid currentColor;
-	bottom: -1.5em;
+	bottom: -1.3em;
 	border-radius: 50% 50% 0 0;
-	left: 0.2em;
+	left: 0.1em;
 }
 .mi-glass.empty, .mi-glass.empty::after {
 	background-color: transparent;
@@ -1030,6 +1074,7 @@
 	border-color: transparent currentColor currentColor;
     border-width: 1.5em;
     transform: rotate(45deg);
+    margin-left: -0.3em;
 }
 .mi-pie::before {
 	content: '';
@@ -1083,28 +1128,29 @@
 	height: 0.4em;
 	border: 0.7em solid currentColor;
 	border-radius: 100%;
+	margin-left: 0.3em;
 }
 .mi-eye::before {
 	content: '';
 	position: absolute;
-	width: 7em;
-	height: 7em;
+	width: 6em;
+	height: 6em;
 	border: 0.2em solid;
 	border-color: currentColor transparent transparent transparent;
 	border-radius: 100%;
-	top: -0.9em;
-	left: -3.5em;
+	top: -0.8em;
+	left: -3em;
 }
 .mi-eye::after {
 	content: '';
 	position: absolute;
-	width: 7em;
-	height: 7em;
+	width: 6em;
+	height: 6em;
 	border: 0.2em solid;
 	border-color: transparent transparent currentColor transparent;
 	border-radius: 100%;
-	bottom: -0.9em;
-	left: -3.5em;
+	bottom: -0.8em;
+	left: -3em;
 }
 
 .mi-hierarchy {
@@ -1117,6 +1163,7 @@
 	box-shadow: 
 		-1.1em 1.5em 0 0,
 		1.1em 1.5em 0 0;
+	margin-left: 0.5em;
 }
 .mi-hierarchy::before {
 	content: '';
@@ -1142,16 +1189,17 @@
 .mi-bell {
 	position: absolute;
 	transition: all 0.2s;
-	width: 1em;
+	width: 1.2em;
 	height: 1.4em;
 	border: 0.2em solid currentColor;
 	border-radius: 100% 100% 0 0;
+	margin-left: 0.3em;
 }
 .mi-bell::before {
 	content: '';
 	position: absolute;
 	background-color: currentColor;
-	width: 1.8em;
+	width: 2em;
 	height: 0.2em;
 	bottom:-0.2em;
 	left: -0.4em;
@@ -1164,39 +1212,41 @@
 	background-color: currentColor;
 	border-radius: 100%;
 	bottom: -0.7em;
-	left: 0.3em;
+	left: 0.4em;
 	box-shadow: 0 -2.1em 0 0;
 }
 
 .mi-connection {
 	position: absolute;
 	transition: all 0.2s;
-	height: 0.4em;
-	width: 0.4em;
+	height: 0.6em;
+	width: 0.6em;
 	background-color: currentColor;
 	border-radius: 100%;
+	margin-left: 0.7em;
+	margin-top: 1em;
 }
 .mi-connection::before {
 	content: '';
 	position: absolute;
-	height: 1em;
-	width: 1em;
-	border: 0.2em solid;
+	height: 1.6em;
+	width: 1.6em;
+	border: 0.3em solid;
 	border-color: currentColor transparent transparent;
 	border-radius: 100%;
-	left: -0.5em;
-	top: -0.4em;
+	left: -0.8em;
+	top: -0.6em;
 }
 .mi-connection::after {
 	content: '';
 	position: absolute;
-	height: 2em;
-	width: 2em;
-	border: 0.2em solid;
+	height: 2.8em;
+	width: 2.8em;
+	border: 0.3em solid;
 	border-color: currentColor transparent transparent;
 	border-radius: 100%;
-	left: -1em;
-	top: -0.8em;
+	left: -1.4em;
+	top: -1.2em;
 }
 
 .mi-save {
@@ -1249,6 +1299,7 @@
 	left: -0.3em;
 	bottom: -0.5em;
 }
+
 .mi-photo {
 	position: absolute;
 	transition: all 0.2s;
@@ -1256,6 +1307,7 @@
 	height: 1.5em;
 	border: 0.2em solid currentColor;
 	border-radius: 0.2em;
+	margin-left: -0.5em;
 }
 .mi-photo::before {
 	content: '';
@@ -1287,6 +1339,7 @@
 	border: solid currentColor;
 	border-width: 0 0.2em 0.2em;
 	border-radius: 0.2em;
+	margin-left: -0.5em;
 }
 .mi-folder::before {
 	content: '';
@@ -1320,6 +1373,7 @@
 	height: 0.8em;
 	border: solid currentColor;
 	border-width: 0.5em 0.2em;
+	margin-left: 0.5em;
 }
 .mi-film::before {
 	content: '';
@@ -1366,6 +1420,7 @@
 	border: solid;
 	border-width: 1.5em 2em 0 2em;
 	border-color: currentColor transparent transparent;
+	margin-left: -1em;
 }
 .mi-star::before {
 	content: '';
@@ -1392,4 +1447,35 @@
 	top: -3.1em;
 	transform-origin: left;
 	transform: rotate(18deg);
+}
+
+.mi-lightbulb {
+	position: absolute;
+	transition: all 0.2s;
+	width: 2.5em;
+	height: 2.5em;
+	background-color: currentColor;
+	border-radius: 100%;
+	margin-top: -0.8em;
+	margin-left: -0.3em;
+}
+.mi-lightbulb::before {
+	content: '';
+	position: absolute;
+	width: 1.5em;
+	height: 0.5em;
+	background-color: currentColor;
+	left: 0.5em;
+	bottom: -0.1em;
+}
+.mi-lightbulb::after {
+	content: '';
+	position: absolute;
+	width: 0.7em;
+	height: 0.2em;
+	left: 0.5em;
+	bottom: -1.6em;
+	border: solid;
+	border-width: 0.6em 0.4em;
+	border-color: currentColor transparent transparent;
 }
